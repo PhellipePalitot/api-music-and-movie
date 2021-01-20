@@ -1,9 +1,5 @@
-from typing import Optional
-from fastapi import FastAPI, Query, HTTPException, Request
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import RedirectResponse
-
-import time
 import pandas as pd
 
 df = pd.read_csv("dataframes/musicas.csv")
