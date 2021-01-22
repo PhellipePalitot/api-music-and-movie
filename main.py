@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import RedirectResponse
 import pandas as pd
 
-df = pd.read_csv("dataframes/musicas.csv")
-dfFilmes = pd.read_csv("dataframes/filmesTOP.csv")
+df = pd.read_csv("musicas.csv")
+dfFilmes = pd.read_csv("filmesTOP.csv")
 # print(df.sample(1))
 app = FastAPI()
 
